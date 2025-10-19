@@ -5,9 +5,12 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN apt-get update && apt-get install -y git
+RUN apt-get update
 
-RUN apt-get update && apt-get install -y zsh
+RUN apt-get install -y git
+
+RUN  apt-get install -y zsh
+
 
 RUN npm install -g @angular/cli
 

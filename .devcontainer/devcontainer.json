@@ -24,13 +24,17 @@
   // Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "devcontainer"
 
+  "mounts": ["source=${env:USERPROFILE}\\.ssh,target=/root/.ssh,type=bind"],
+
+  "remoteUser": "root",
+
   "customizations": {
     "vscode": {
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"
       },
 
-      "extensions": ["Angular.ng-template", "esbenp.prettier-vscode"]
+      "extensions": ["Angular.ng-template", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
     }
   }
 }
