@@ -38,6 +38,9 @@ testem.log
 /typings
 __screenshots__/
 
+# Environment files (producción con claves reales)
+/src/environments/environment.prod.ts
+
 # System files
 .DS_Store
 Thumbs.db
